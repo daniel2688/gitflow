@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi sitio web.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
+        <section id="acerca-de">
+            <h2>Acerca de</h2>
+            <p>Información sobre mí o sobre la empresa.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
